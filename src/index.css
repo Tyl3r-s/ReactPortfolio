@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-height: 100vh;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body-container {
+    display: grid;
+}
+
+/* header section */
+
+header {
+    background-color: #1f2833;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 9999;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.nav-tabs {
+    height: 6vh;
+}
+
+.nav-link {
+    height: 6vh;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: white;
+    margin-top: 5px;
+}
+
+header nav ul li a {
+    font-size: 25px;
+    list-style: none;
+    padding: 2px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    opacity: 0.5;
+}
+
+header nav ul li a:hover {
+    border-radius: 3px;
+    border: none;
+    color: white;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+header nav ul li a:active {
+    color: black;
+    opacity: 0.5;
+    transition: 0s;
+}
+
+/* general */
+
+.portfolioContainer {
+    min-height: 88vh;
+}
+
+/* hero section */
+
+.hero {
+    background: linear-gradient(rgba(250, 250, 250, 0.3),
+            rgba(0, 0, 0, 0.8)),
+        url('./assets/contact/contact.jpeg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 88vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.content-area {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content p {
+    font-size: 30px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+/* landing page */
+
+.landing {
+    display: grid;
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7)),
+        url('./assets/landing-page/jake-hills-mI02K_LxlfU-unsplash.jpg');
+    background-size: cover;
+}
+
+.landing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+    color: white;
+}
+
+.landing-title h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 5vh;
+    letter-spacing: 7px;
+}
+
+.landing-subtitle {
+    margin: 3vh;
+    color: #90ccf4;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.landing-subtitle span {
+    color: #00ffee;
+    letter-spacing: 6px;
+}
+
+.landingBtns {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    margin-top: 20vh;
+}
+
+.landing-title a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.landing-container a:hover {
+    opacity: 0.7;
+    transition: 0.1s;
+}
+
+.landing-container a:active {
+    opacity: 0.4;
+    transition: 0s;
+}
+
+.landing-headline h1 {
+    font-size: 40px;
+    padding: 50px;
+    margin-bottom: 60px;
+    color: rgb(54, 43, 214);
+}
+
+/* about me section */
+
+/* container div */
+.about-me-section {
+    display: flex;
+    width: 100%;
+}
+
+.abtTitle {
+    margin-left: 6vw;
+}
+
+.about-title {
+    color: rgba(37, 37, 37, 0.605);
+    font-weight: 200;
+    margin-top: 13%;
+    font-size: 50px;
+}
+
+.about-text {
+    color: rgba(250, 130, 2, 0.968);
+    margin-top: 20px;
+    margin-left: 6vw;
+    font-weight: 300;
+    width: 70%;
+    letter-spacing: 2px;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+/* left side about me div */
+.leftCol {
+    height: 88vh;
+    width: 60%;
+}
+
+/* right side about me div */
+.rightCol {
+    background-image: url(./assets/about/Me.jpg);
+    height: 88vh;
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.blur {
+    backdrop-filter: blur(8px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.03))
+}
+
+.me {
+    border-radius: 50%;
+    height: 60%;
+    width: auto;
+    position: absolute;
+    left: -70px;
+    margin-top: 22%;
+}
+
+/* my work/projects section */
+
+.projects {
+    width: 100%;
+    min-height: 88vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.01),
+            rgba(0, 0, 0, 0.1));
+}
+
+.card {
+    margin-top: 1vh;
+    height: 70vh;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: 1vh;
+}
+
+.card img {
+    height: 225px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: grid;
+}
+
+.links {
+    display: inline-flex;
+    align-self: flex-end;
+    justify-content: space-around;
+}
+
+.cardBtn {
+    background-color: #00ffee;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.cardBtn:hover {
+    box-shadow: rgba(0, 0, 0, 0.0) 1.95px 1.95px 2.6px;
+    transition: 0.2s ease-in-out;
+}
+
+.cardBtn:active {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* contact me */
+
+.contactTitle {
+    color: white;
+    margin-top: 5vh;
+}
+
+.contact-form {
+    height: 88vh;
+    width: 40vw;
+}
+
+.contact-form form {
+    width: 50vw;
+}
+
+.contactBtn {
+    width: 100%;
+}
+
+
+.contact-section {
+    height: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.contact-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 6vh;
+}
+
+.contact-section p {
+    height: 6vh;
+}
+
+.contact-section a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    text-shadow: none;
+    transition: 0.5s;
+}
+
+.contact-section a:active {
+    opacity: 0.4;
+    transition: 0s;
+}
+
+.footerClass {
+    height: 6vh;
+    color: white;
+    text-align: center;
+    background-color: rgb(8, 7, 10);
+}
+
+/* .footerClass p {
+    margin-top: 1vh;
+} */
+
+/* resume stuff */
+
+/* .skills-n-stuff {
+    height: 90vh;
+} */
+
+/* media query */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    body {
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width: 667px) {
+
+    .about-me-text p {
+        height: 100%;
+    }
+
+    html {
+        overflow: scroll;
+    }
+
+    .landingBtns {
+        display: grid;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
